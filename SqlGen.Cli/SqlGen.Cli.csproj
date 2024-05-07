@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>sqlgen</ToolCommandName>
+        <PackageOutputPath>./nupkg</PackageOutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="Assets\motd.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Assets\help.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SqlGen.Config\SqlGen.Config.csproj" />
+      <ProjectReference Include="..\SqlGen.Database\SqlGen.Database.csproj" />
+      <ProjectReference Include="..\SqlGen.Generator\SqlGen.Generator.csproj" />
+    </ItemGroup>
+
+</Project>

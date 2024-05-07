@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SqlGen.Config\SqlGen.Config.csproj" />
+      <ProjectReference Include="..\SqlGen.Database\SqlGen.Database.csproj" />
+    </ItemGroup>
+
+</Project>
