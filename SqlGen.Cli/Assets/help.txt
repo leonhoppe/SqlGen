@@ -1,7 +1,0 @@
-Command: sqlgen
-Arguments:
-    -h          --help             /help    Show this message
-    -d <url>    --download <url>            Download templates
-    -g          --generate                  Generate template
-    -c <path>   --create <path>             Create project configuration
-    -r <path>   --run <path>                Run project configuration

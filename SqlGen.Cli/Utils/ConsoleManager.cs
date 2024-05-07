@@ -9,8 +9,18 @@ internal static class ConsoleManager {
     private const string DefaultTemplateCdn = "https://cdn.leon-hoppe.de/sqlgen/" + DownloadConfig.DefaultName;
 
     public static void PrintMotd() {
-        var motd = File.ReadAllText(AssetFolder + "motd.txt");
-        Console.WriteLine(motd);
+        Console.WriteLine("""
+                          ███████╗ ██████╗ ██╗      ██████╗ ███████╗███╗   ██╗
+                          ██╔════╝██╔═══██╗██║     ██╔════╝ ██╔════╝████╗  ██║
+                          ███████╗██║   ██║██║     ██║  ███╗█████╗  ██╔██╗ ██║
+                          ╚════██║██║▄▄ ██║██║     ██║   ██║██╔══╝  ██║╚██╗██║
+                          ███████║╚██████╔╝███████╗╚██████╔╝███████╗██║ ╚████║
+                          ╚══════╝ ╚══▀▀═╝ ╚══════╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝
+                          
+                          by Leon Hoppe
+                          
+                          
+                          """);
     }
 
     public static IList<Tuple<CliOption, string>> ExtractCliOptions(string[] args) {
@@ -103,8 +113,16 @@ internal static class ConsoleManager {
     }
 
     public static void ShowHelpText() {
-        var helpText = File.ReadAllText(AssetFolder + "help.txt");
-        Console.WriteLine(helpText);
+        Console.WriteLine("""
+                          Command: sqlgen
+                          Arguments:
+                              -h          --help             /help    Show this message
+                              -d <url>    --download <url>            Download templates
+                              -g          --generate                  Generate template
+                              -c <path>   --create <path>             Create project configuration
+                              -r <path>   --run <path>                Run project configuration
+                          
+                          """);
     }
     
 }

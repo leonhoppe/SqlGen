@@ -11,20 +11,11 @@
         <PackageOutputPath>./nupkg</PackageOutputPath>
         
         <PackageId>SqlGen</PackageId>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <Authors>Leon Hoppe</Authors>
         <PackageDescription>A cli tool to automatically generate boilerplate code based on your sql tables.</PackageDescription>
         <RepositoryUrl>https://github.com/leonhoppe/SqlGen</RepositoryUrl>
     </PropertyGroup>
-
-    <ItemGroup>
-      <None Update="Assets\motd.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-      <None Update="Assets\help.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-    </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\SqlGen.Config\SqlGen.Config.csproj" />
