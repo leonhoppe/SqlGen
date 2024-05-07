@@ -9,6 +9,12 @@
         <PackAsTool>true</PackAsTool>
         <ToolCommandName>sqlgen</ToolCommandName>
         <PackageOutputPath>./nupkg</PackageOutputPath>
+        
+        <PackageId>SqlGen</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Leon Hoppe</Authors>
+        <PackageDescription>A cli tool to automatically generate boilerplate code based on your sql tables.</PackageDescription>
+        <RepositoryUrl>https://github.com/leonhoppe/SqlGen</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
